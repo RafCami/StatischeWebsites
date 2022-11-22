@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Docent" />
+    <title>CSS deel 2 voorbeelden</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .navigation {
+            overflow: hidden;
+            background-color: #0091a6;
+        }
+        
+        .navigation a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .navigation a:hover {
+            background-color: #eb6241;
+        }
+        
+        .navigation a.active {
+            background-color: #e74018;
+        }
+        
+        .navigation a.icon {
+            /* icoon rechts zetten */
+            float: right;
+            /* icoon verbergen */
+            display: none;
+        }
+        
+        @media screen and (max-width: 600px) {
+            /* toon alleen het eerste anchor child element van .navigation */
+            .navigation a:not(:first-child) {
+                display: none;
+            }
+            /* icoon weer tonen wanneer window size kleiner is dan 600px */
+            .navigation a.icon {
+                display: block;
+            }
+            /* icoon rechtsboven plaatsen ipv onderaan */
+            .navigation.responsive {
+                position: relative;
+            }
+            .navigation.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            /* alle anchors tonen wanneer class responsive actief is */
+            .navigation.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigation" id="navigation-head">
+        <a href="#" class="active">Start</a>
+        <a href="#">Projecten</a>
+        <a href="#">Over ons</a>
+        <a href="#">GTI</a>
+        <a href="#">TTI</a>
+        <a href="#">Contact</a>
+        <a href="#" class="icon" onclick="toggleResponsiveClass()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <script>
+        function toggleResponsiveClass() {
+            let element = document.getElementById("navigation-head");
+            if (element.className === "navigation") {
+                element.className += " responsive";
+            } else {
+                element.className = "navigation";
+            }
+        }
+    </script>
+</body>
+
+</html>

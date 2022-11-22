@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Docent" />
+    <title>CSS deel 2 voorbeelden</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: greenyellow;
+        }
+        
+        @media screen and (min-width: 1000px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+        
+        @media screen and (min-width: 1500px) {
+            body {
+                background-color: lightsalmon;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The @media Rule</h1>
+
+    <p>Resize the browser window. When the width of this document is 1000 pixels or more, the background-color is "blue", when the width exceeds 1500 pixels the background color will be "orange" and otherwise it will be "red".
+    </p>
+</body>
+
+</html>

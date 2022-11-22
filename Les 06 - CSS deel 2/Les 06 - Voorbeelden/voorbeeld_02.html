@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Docent" />
+    <title>CSS deel 2 voorbeelden</title>
+
+    <style>
+      table {
+        width: 100%;
+        border-spacing: 0px;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 15px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      th {
+        padding: 3px;
+        text-align: left;
+        background-color: #4caf50;
+        color: white;
+      }
+
+      .responsive-table {
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Responsive Table</h2>
+    <p>
+      A responsive table will display a horizontal scroll bar if the screen is
+      too small to display the full content. Resize the browser window to see
+      the effect:
+    </p>
+    <p>
+      To create a responsive table, add a container element (like div) with
+      <strong>overflow-x:auto</strong> around the table element:
+    </p>
+
+    <div class="responsive-table">
+      <table>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>Adam</td>
+          <td>Johnson</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

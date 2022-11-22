@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Docent" />
+  <title>CSS deel 2 voorbeelden</title>
+
+  <style>
+    /* 
+            Tip: box-sizing: border-box;
+            Stel je voor dat je een kolom hebt met een breedte van 100px en een border van 5px.
+            Zonder box-sizing: border-box; zal je kolom uiteindelijk 105px breed zijn en dit zal in sommige gevallen problemen met zich meebrengen.
+            
+            Voorbeeld: Als je twee kolommen hebt van 50% en je hebt ook een border, padding en/of margin ingesteld zal er plaats tekort zijn om de twee kolommen naast elkaar te zetten
+            omdat je nu boven de 100% zit. 
+            Bekijk voorbeeld_box-sizing.html, hier staat box-sizing: border-box; in commentaar en zie wat er gebeurt.
+            Gebruik dus daarom box-sizing: border-box; zo zal de content zich automatisch aanpassen.      
+        */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    aside {
+      float: left;
+      width: 25%;
+      padding: 15px;
+      background-color: antiquewhite;
+    }
+
+    main {
+      float: left;
+      width: 50%;
+      padding: 15px;
+      background-color: lightblue;
+    }
+
+    /* Tip: stop het floaten van de kolommen */
+
+    section:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <aside>
+      <h2>Side column</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit
+        amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget
+        elementum magna tristique. Quisque vehicula, risus eget aliquam
+        placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+        Praesent scelerisque tortor sed accumsan convallis.
+      </p>
+    </aside>
+
+    <main>
+      <h2>Main column</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit
+        amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget
+        elementum magna tristique. Quisque vehicula, risus eget aliquam
+        placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+        Praesent scelerisque tortor sed accumsan convallis.
+      </p>
+    </main>
+
+    <aside>
+      <h2>Side column</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit
+        amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget
+        elementum magna tristique. Quisque vehicula, risus eget aliquam
+        placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+        Praesent scelerisque tortor sed accumsan convallis.
+      </p>
+    </aside>
+  </section>
+</body>
+
+</html>
