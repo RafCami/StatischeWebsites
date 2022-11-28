@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.column-25 {
+    width: 25%;
+    padding: 15px;
+    float: left;
+}
+
+.column-40 {
+    width: 40%;
+    padding: 15px;
+    float: left;
+}
+
+.column-60 {
+    width: 60%;
+    padding: 15px;
+    float: left;
+}
+
+@media only screen and (max-width: 500px) {
+    .column-25, .column-40, .column-60 {
+        width: 100%;
+    }
+}

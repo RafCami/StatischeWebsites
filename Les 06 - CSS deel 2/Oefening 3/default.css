@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.column-30 {
+    width: 30%;
+    padding: 15px;
+    float: left;
+}
+
+.column-70 {
+    width: 70%;
+    padding: 15px;
+    float: left;
+}
+
+.row:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .column-30, .column-70 {
+        width: 100%;
+    }
+  }

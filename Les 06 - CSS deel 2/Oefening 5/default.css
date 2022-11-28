@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+
+
+header {
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 100px;
+    
+}
+header h1 {
+    text-align: center;
+    padding-top: 30px;
+  
+}
+
+main {
+    margin: 0px;
+}
+
+nav {
+    width: 10%;
+    background-color: lightgray;
+    float: left;
+    height: 500px;
+}
+
+content {
+    width: 90%;
+    float: left;
+    padding-left: 30px;
+}
+
+
+footer {
+    width: 100%;
+    background-color: black;
+    float: left;
+    color: white;
+    text-align: center;
+    height: 25px;
+}
+
+
+header, nav, footer {
+    padding: 5px;
+}

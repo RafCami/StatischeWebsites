@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+.outer {
+    background-color: white;
+    height: 300px;
+    width: 50%;
+    padding: 5px;
+}
+
+.middle {
+    background-color: red;
+    height: 200px;
+    width: 75%;
+    padding: 5px;
+}
+
+.center {
+    background-color: yellow;
+    height: 100px;
+    width: 50%;
+}
+h1 {
+    
+    text-align: center;
+}
