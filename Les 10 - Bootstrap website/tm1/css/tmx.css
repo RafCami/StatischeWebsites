@@ -1,0 +1,40 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.background {
+    background-image: url("../img/surf.jpg");
+    height: 50%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.headbar {
+    background-color: #E73F17;
+}
+::selection {
+  background: #E73F17;
+  color: #fff;
+}
+::-moz-selection {
+  background: #E73F17;
+  color: #fff;
+}
