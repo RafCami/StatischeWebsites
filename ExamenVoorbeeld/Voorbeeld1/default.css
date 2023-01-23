@@ -50,7 +50,7 @@ header {
   display: flex;
 }
 .flex-container > div {
-  flex: 100%;
+  /* flex: 100%; */
   padding: 10px;
 }
 

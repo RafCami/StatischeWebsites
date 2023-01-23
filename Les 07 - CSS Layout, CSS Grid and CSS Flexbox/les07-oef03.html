@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>CSS Flexbox</title>
+    <style>
+        body {
+            font-size: 40px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container>div {
+            flex-grow: 1;
+            text-align: center;
+            padding: 40px;
+            height: 200px;
+            margin: 10px;
+        }
+
+        .item-1 {
+            background-color: aqua;
+        }
+
+        .item-2 {
+            background-color: rgb(225, 0, 255);
+        }
+
+        .item-3 {
+            background-color: rgb(84, 202, 11);
+        }
+
+        .item-4 {
+            background-color: rgb(255, 225, 0);
+        }
+
+        .item-5 {
+            background-color: rgb(255, 47, 0);
+        }
+
+        .item-6 {
+            background-color: rgb(139, 47, 110);
+        }
+
+        .item-7 {
+            background-color: rgb(150, 190, 153);
+        }
+
+        .item-8 {
+            background-color: rgb(14, 37, 186);
+        }
+
+        .item-9 {
+            background-color: rgb(179, 179, 48);
+        }
+
+        .subitem-1 {
+            background-color: rgb(14, 178, 181);
+        }
+
+        .subitem-2 {
+            background-color: rgb(14, 181, 39);
+        }
+
+        .subitem-3 {
+            background-color: rgb(181, 14, 153);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item-1">Header</div>
+        <div class="item-2">Header</div>
+        <div class="item-3">Header</div>
+    </div>
+    <div class="container">
+        <div class="item-4">
+            <div class="subitem-1">Menu 1</div>
+            <div class="subitem-2">Menu 2</div>
+            <div class="subitem-3">Menu 3</div>
+        </div>
+        <div class="item-5">Body</div>
+        <div class="item-6">Body</div>
+        <div class="item-7">Body</div>
+    </div>
+    <div class="container">
+        <div class="item-8">Footer</div>
+        <div class="item-9">Footer</div>
+    </div>
+</body>
+
+</html>
